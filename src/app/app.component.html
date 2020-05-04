@@ -1,0 +1,17 @@
+<h2>Integrasi DataTables Dengan Angular 9</h2>
+<table class="table table-striped table-bordered table-sm row-border hover" datatable [dtOptions]="dtOptions">
+  <thead>
+    <tr>
+      <th>NIP</th>
+      <th>Nama Pegawai</th>
+      <th>Alamat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pgw of pegawai">
+       <td>{{pgw.Nip}}</td>
+       <td>{{pgw.Nama}}</td>
+       <td>{{pgw.Alamat}}</td>
+    </tr>
+  </tbody>
+</table>
